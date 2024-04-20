@@ -108,6 +108,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front_Form.Designer.vb">
+      <DependentUpon>Front_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Front_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inactive.Designer.vb">
       <DependentUpon>Inactive.vb</DependentUpon>
     </Compile>
@@ -183,6 +195,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front_Form.resx">
+      <DependentUpon>Front_Form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inactive.resx">
       <DependentUpon>Inactive.vb</DependentUpon>

@@ -54,9 +54,10 @@ Partial Class Chair_Add
         Me.Panel_AddChair.Controls.Add(Me.Panel11)
         Me.Panel_AddChair.Controls.Add(Me.Edit_btn)
         Me.Panel_AddChair.Controls.Add(Me.Button12)
-        Me.Panel_AddChair.Location = New System.Drawing.Point(20, 8)
+        Me.Panel_AddChair.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_AddChair.Location = New System.Drawing.Point(0, 0)
         Me.Panel_AddChair.Name = "Panel_AddChair"
-        Me.Panel_AddChair.Size = New System.Drawing.Size(742, 420)
+        Me.Panel_AddChair.Size = New System.Drawing.Size(800, 450)
         Me.Panel_AddChair.TabIndex = 7
         '
         'lbl_ChairID

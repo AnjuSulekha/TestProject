@@ -73,4 +73,56 @@ Public Class Master_Form
             e.Handled = True
         End If
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Master_Add.MdiParent = Form1
+        Master_Add.BringToFront()
+        Master_Add.Show()
+        Master_Add.Lbl_Reg.Visible = True
+        Master_Add.Lbl_Edit.Visible = False
+        Master_Add.Btn_Reg.Visible = True
+        Master_Add.Btn_Edit.Visible = False
+        Master_Add.Btn_Exit.Location = New Point(270, 376)
+
+    End Sub
+    Public Sub RefreshStaffData()
+        ' Clear the DataGridView
+        DataGridView2.DataSource = Nothing
+
+        ' Re-fetch the data from the database and update the DataGridView
+        DataGridAddView("")
+    End Sub
+
+
+
+    Private Sub DataGridView2_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellClick
+        If e.RowIndex >= 0 Then
+            If e.ColumnIndex = DataGridView2.Columns("Edit").Index Then
+                Dim ID = DataGridView2.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
+                ' This line seems problematic, see below for correction
+                Dim staffid As String = DataGridView2.Rows(e.RowIndex).Cells("StaffID").Value.ToString() ' Assuming "StaffIDColumn" is the name of the column containing the staff ID
+                '        ' .StaffID = staffid
+                Master_Add.lbl_staff.Text = staffid
+                Master_Add.MdiParent = Form1
+                Master_Add.Show()
+                Master_Add.BringToFront()
+                If Master_Add.Visible Then
+                    Master_Add.LoadFormData() ' Load data when the form becomes visible
+                End If
+            End If
+            Master_Add.Lbl_Reg.Visible = False
+            Master_Add.Lbl_Edit.Visible = True
+            Master_Add.Btn_Edit.Visible = True
+            Master_Add.Btn_Reg.Visible = False
+            Master_Add.Btn_Exit.Location = New Point(375, 376)
+            Master_Add.Button11.Visible = True
+
+        End If
+
+
+    End Sub
+
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+
+    End Sub
 End Class

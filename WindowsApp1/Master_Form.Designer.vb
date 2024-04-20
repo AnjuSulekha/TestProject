@@ -35,11 +35,13 @@ Partial Class Master_Form
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.DataGridView2)
-        Me.Panel1.Location = New System.Drawing.Point(12, 12)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(844, 520)
+        Me.Panel1.Size = New System.Drawing.Size(784, 411)
         Me.Panel1.TabIndex = 0
         '
         'Button1
@@ -51,7 +53,7 @@ Partial Class Master_Form
         Me.Button1.Font = New System.Drawing.Font("Arial", 9.75!)
         Me.Button1.Image = Global.WindowsApp1.My.Resources.Resources.add
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.Location = New System.Drawing.Point(335, 426)
+        Me.Button1.Location = New System.Drawing.Point(305, 317)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(149, 50)
         Me.Button1.TabIndex = 6
@@ -109,14 +111,15 @@ Partial Class Master_Form
         Me.DataGridView2.RowTemplate.Height = 50
         Me.DataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView2.Size = New System.Drawing.Size(630, 365)
+        Me.DataGridView2.Size = New System.Drawing.Size(570, 256)
         Me.DataGridView2.TabIndex = 5
         '
         'Master_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(868, 544)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(784, 411)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Master_Form"
         Me.Text = "Master_Form"

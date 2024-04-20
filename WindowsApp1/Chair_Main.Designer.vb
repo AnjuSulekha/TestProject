@@ -37,10 +37,11 @@ Partial Class Chair_Main
         '
         Me.Chair__Panel.Controls.Add(Me.Button5)
         Me.Chair__Panel.Controls.Add(Me.DataGridView1)
-        Me.Chair__Panel.Location = New System.Drawing.Point(29, 7)
+        Me.Chair__Panel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Chair__Panel.Location = New System.Drawing.Point(0, 0)
         Me.Chair__Panel.Name = "Chair__Panel"
-        Me.Chair__Panel.Size = New System.Drawing.Size(742, 431)
-        Me.Chair__Panel.TabIndex = 78
+        Me.Chair__Panel.Size = New System.Drawing.Size(784, 411)
+        Me.Chair__Panel.TabIndex = 0
         '
         'Button5
         '
@@ -51,10 +52,10 @@ Partial Class Chair_Main
         Me.Button5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Image = Global.WindowsApp1.My.Resources.Resources.add
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button5.Location = New System.Drawing.Point(285, 325)
+        Me.Button5.Location = New System.Drawing.Point(305, 317)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(146, 50)
-        Me.Button5.TabIndex = 5
+        Me.Button5.TabIndex = 7
         Me.Button5.Text = "Add chair"
         Me.Button5.UseVisualStyleBackColor = False
         '
@@ -94,7 +95,7 @@ Partial Class Chair_Main
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView1.EnableHeadersVisualStyles = False
-        Me.DataGridView1.Location = New System.Drawing.Point(73, 34)
+        Me.DataGridView1.Location = New System.Drawing.Point(107, 27)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -109,15 +110,15 @@ Partial Class Chair_Main
         Me.DataGridView1.RowTemplate.Height = 50
         Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(633, 271)
-        Me.DataGridView1.TabIndex = 4
+        Me.DataGridView1.Size = New System.Drawing.Size(570, 256)
+        Me.DataGridView1.TabIndex = 6
         '
         'Chair_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(784, 411)
         Me.Controls.Add(Me.Chair__Panel)
         Me.Name = "Chair_Main"
         Me.Text = "Chair_Main"

@@ -29,6 +29,7 @@ Partial Class Master_Add
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Btn_Exit = New System.Windows.Forms.Button()
         Me.DT_DOB = New System.Windows.Forms.DateTimePicker()
         Me.DT_DOJ = New System.Windows.Forms.DateTimePicker()
@@ -52,14 +53,13 @@ Partial Class Master_Add
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button11 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -71,7 +71,7 @@ Partial Class Master_Add
         Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.Controls.Add(Me.Button3)
         Me.Panel2.Controls.Add(Me.Button4)
-        Me.Panel2.Controls.Add(Me.PictureBox2)
+        Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Controls.Add(Me.Btn_Exit)
         Me.Panel2.Controls.Add(Me.DT_DOB)
         Me.Panel2.Controls.Add(Me.DT_DOJ)
@@ -90,15 +90,16 @@ Partial Class Master_Add
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Button11)
-        Me.Panel2.Location = New System.Drawing.Point(29, 12)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(742, 445)
+        Me.Panel2.Size = New System.Drawing.Size(784, 450)
         Me.Panel2.TabIndex = 1
         '
         'lbl_staff
         '
         Me.lbl_staff.AutoSize = True
-        Me.lbl_staff.Location = New System.Drawing.Point(663, 86)
+        Me.lbl_staff.Location = New System.Drawing.Point(663, 72)
         Me.lbl_staff.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_staff.Name = "lbl_staff"
         Me.lbl_staff.Size = New System.Drawing.Size(39, 13)
@@ -109,7 +110,7 @@ Partial Class Master_Add
         '
         Me.Lbl_Reg.AutoSize = True
         Me.Lbl_Reg.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_Reg.Location = New System.Drawing.Point(37, 25)
+        Me.Lbl_Reg.Location = New System.Drawing.Point(34, 17)
         Me.Lbl_Reg.Name = "Lbl_Reg"
         Me.Lbl_Reg.Size = New System.Drawing.Size(173, 24)
         Me.Lbl_Reg.TabIndex = 75
@@ -119,7 +120,7 @@ Partial Class Master_Add
         '
         Me.Lbl_Edit.AutoSize = True
         Me.Lbl_Edit.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_Edit.Location = New System.Drawing.Point(37, 25)
+        Me.Lbl_Edit.Location = New System.Drawing.Point(34, 17)
         Me.Lbl_Edit.Name = "Lbl_Edit"
         Me.Lbl_Edit.Size = New System.Drawing.Size(167, 24)
         Me.Lbl_Edit.TabIndex = 76
@@ -128,7 +129,7 @@ Partial Class Master_Add
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(269, 81)
+        Me.Label9.Location = New System.Drawing.Point(266, 73)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(12, 13)
         Me.Label9.TabIndex = 72
@@ -141,7 +142,7 @@ Partial Class Master_Add
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(268, 76)
+        Me.Button3.Location = New System.Drawing.Point(265, 68)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 74
@@ -155,12 +156,23 @@ Partial Class Master_Add
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.Red
-        Me.Button4.Location = New System.Drawing.Point(209, 76)
+        Me.Button4.Location = New System.Drawing.Point(206, 68)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 73
         Me.Button4.Text = "Delete"
         Me.Button4.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.PictureBox1.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.insert_picture_icon
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox1.Location = New System.Drawing.Point(162, 59)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(41, 43)
+        Me.PictureBox1.TabIndex = 71
+        Me.PictureBox1.TabStop = False
         '
         'Btn_Exit
         '
@@ -168,7 +180,7 @@ Partial Class Master_Add
         Me.Btn_Exit.FlatAppearance.BorderSize = 0
         Me.Btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Exit.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Exit.Location = New System.Drawing.Point(273, 384)
+        Me.Btn_Exit.Location = New System.Drawing.Point(270, 376)
         Me.Btn_Exit.Name = "Btn_Exit"
         Me.Btn_Exit.Size = New System.Drawing.Size(95, 34)
         Me.Btn_Exit.TabIndex = 28
@@ -179,7 +191,7 @@ Partial Class Master_Add
         '
         Me.DT_DOB.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DT_DOB.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DT_DOB.Location = New System.Drawing.Point(437, 337)
+        Me.DT_DOB.Location = New System.Drawing.Point(408, 329)
         Me.DT_DOB.Name = "DT_DOB"
         Me.DT_DOB.Size = New System.Drawing.Size(100, 22)
         Me.DT_DOB.TabIndex = 26
@@ -190,7 +202,7 @@ Partial Class Master_Add
         Me.DT_DOJ.CalendarTrailingForeColor = System.Drawing.Color.Transparent
         Me.DT_DOJ.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DT_DOJ.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DT_DOJ.Location = New System.Drawing.Point(164, 337)
+        Me.DT_DOJ.Location = New System.Drawing.Point(161, 329)
         Me.DT_DOJ.Name = "DT_DOJ"
         Me.DT_DOJ.Size = New System.Drawing.Size(100, 22)
         Me.DT_DOJ.TabIndex = 25
@@ -199,7 +211,7 @@ Partial Class Master_Add
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(306, 343)
+        Me.Label8.Location = New System.Drawing.Point(303, 335)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(77, 16)
         Me.Label8.TabIndex = 30
@@ -209,7 +221,7 @@ Partial Class Master_Add
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(38, 343)
+        Me.Label7.Location = New System.Drawing.Point(35, 335)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(72, 16)
         Me.Label7.TabIndex = 29
@@ -221,7 +233,7 @@ Partial Class Master_Add
         Me.Btn_Reg.FlatAppearance.BorderSize = 0
         Me.Btn_Reg.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Reg.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Reg.Location = New System.Drawing.Point(168, 381)
+        Me.Btn_Reg.Location = New System.Drawing.Point(165, 376)
         Me.Btn_Reg.Name = "Btn_Reg"
         Me.Btn_Reg.Size = New System.Drawing.Size(95, 34)
         Me.Btn_Reg.TabIndex = 27
@@ -234,7 +246,7 @@ Partial Class Master_Add
         Me.Btn_Edit.FlatAppearance.BorderSize = 0
         Me.Btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btn_Edit.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Edit.Location = New System.Drawing.Point(168, 384)
+        Me.Btn_Edit.Location = New System.Drawing.Point(165, 376)
         Me.Btn_Edit.Name = "Btn_Edit"
         Me.Btn_Edit.Size = New System.Drawing.Size(95, 34)
         Me.Btn_Edit.TabIndex = 31
@@ -246,7 +258,7 @@ Partial Class Master_Add
         Me.Panel7.BackColor = System.Drawing.SystemColors.Control
         Me.Panel7.Controls.Add(Me.Txt_Salary)
         Me.Panel7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel7.Location = New System.Drawing.Point(162, 293)
+        Me.Panel7.Location = New System.Drawing.Point(159, 285)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(544, 36)
         Me.Panel7.TabIndex = 17
@@ -265,7 +277,7 @@ Partial Class Master_Add
         Me.Panel6.BackColor = System.Drawing.SystemColors.Control
         Me.Panel6.Controls.Add(Me.Txt_Mobile)
         Me.Panel6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel6.Location = New System.Drawing.Point(162, 249)
+        Me.Panel6.Location = New System.Drawing.Point(159, 241)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(544, 36)
         Me.Panel6.TabIndex = 16
@@ -284,7 +296,7 @@ Partial Class Master_Add
         Me.Panel5.BackColor = System.Drawing.SystemColors.Control
         Me.Panel5.Controls.Add(Me.Txt_Email)
         Me.Panel5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel5.Location = New System.Drawing.Point(162, 206)
+        Me.Panel5.Location = New System.Drawing.Point(159, 198)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(544, 36)
         Me.Panel5.TabIndex = 15
@@ -303,7 +315,7 @@ Partial Class Master_Add
         Me.Panel4.BackColor = System.Drawing.SystemColors.Control
         Me.Panel4.Controls.Add(Me.Txt_Addrs)
         Me.Panel4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel4.Location = New System.Drawing.Point(162, 163)
+        Me.Panel4.Location = New System.Drawing.Point(159, 155)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(544, 36)
         Me.Panel4.TabIndex = 14
@@ -322,7 +334,7 @@ Partial Class Master_Add
         Me.Panel3.BackColor = System.Drawing.SystemColors.Control
         Me.Panel3.Controls.Add(Me.Txt_StaffName)
         Me.Panel3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel3.Location = New System.Drawing.Point(162, 121)
+        Me.Panel3.Location = New System.Drawing.Point(159, 113)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(544, 36)
         Me.Panel3.TabIndex = 13
@@ -341,7 +353,7 @@ Partial Class Master_Add
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(37, 301)
+        Me.Label6.Location = New System.Drawing.Point(34, 293)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(44, 16)
         Me.Label6.TabIndex = 22
@@ -351,7 +363,7 @@ Partial Class Master_Add
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(37, 174)
+        Me.Label5.Location = New System.Drawing.Point(34, 166)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(55, 16)
         Me.Label5.TabIndex = 21
@@ -361,7 +373,7 @@ Partial Class Master_Add
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(37, 218)
+        Me.Label4.Location = New System.Drawing.Point(34, 210)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(40, 16)
         Me.Label4.TabIndex = 20
@@ -371,7 +383,7 @@ Partial Class Master_Add
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(37, 260)
+        Me.Label3.Location = New System.Drawing.Point(34, 252)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(45, 16)
         Me.Label3.TabIndex = 19
@@ -381,7 +393,7 @@ Partial Class Master_Add
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(37, 130)
+        Me.Label2.Location = New System.Drawing.Point(34, 122)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(41, 16)
         Me.Label2.TabIndex = 18
@@ -395,35 +407,25 @@ Partial Class Master_Add
         Me.Button11.Font = New System.Drawing.Font("Arial", 9.75!)
         Me.Button11.ForeColor = System.Drawing.Color.Black
         Me.Button11.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button11.Location = New System.Drawing.Point(273, 384)
+        Me.Button11.Location = New System.Drawing.Point(270, 376)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(95, 34)
         Me.Button11.TabIndex = 78
         Me.Button11.Text = "Delete"
         Me.Button11.UseVisualStyleBackColor = False
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox2.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.insert_picture_icon
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox2.Location = New System.Drawing.Point(165, 67)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(41, 43)
-        Me.PictureBox2.TabIndex = 71
-        Me.PictureBox2.TabStop = False
-        '
         'Master_Add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(800, 469)
+        Me.ClientSize = New System.Drawing.Size(784, 450)
         Me.Controls.Add(Me.Panel2)
         Me.Name = "Master_Add"
         Me.Text = "Master_Add"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
         Me.Panel6.ResumeLayout(False)
@@ -434,7 +436,6 @@ Partial Class Master_Add
         Me.Panel4.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -446,7 +447,7 @@ Partial Class Master_Add
     Friend WithEvents Label9 As Label
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Btn_Exit As Button
     Friend WithEvents DT_DOB As DateTimePicker
     Friend WithEvents DT_DOJ As DateTimePicker
