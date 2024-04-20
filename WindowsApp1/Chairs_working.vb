@@ -24,9 +24,9 @@ Public Class Chairs_working
             ' Fetch data from the Access database and populate the DataTable
             FetchDataFromDatabase()
 
-            ButtonWidh = 180
-            ButtonHeight = 130
-            ButtonPadding = 10
+            ButtonWidh = 100
+            ButtonHeight = 60
+            ButtonPadding = 15
             FunlistChairs()
             ' DataGridAdd("")
         Catch ex As Exception
@@ -85,7 +85,7 @@ Public Class Chairs_working
             B.Width = ButtonWidh
             B.Left = (i Mod 4) * (ButtonWidh + ButtonPadding)
             B.Top = (i \ 4) * (ButtonHeight + ButtonPadding)
-            B.Text = DT.Rows(i).Item("ChairName").ToString & Environment.NewLine & Environment.NewLine & "StaffName: " & DT.Rows(i).Item("ChairType").ToString
+            B.Text = DT.Rows(i).Item("ChairName").ToString '& Environment.NewLine & Environment.NewLine & "StaffName: " & DT.Rows(i).Item("ChairType").ToString
 
             ' B.Text = DT.Rows(i).Item("Status").ToString
             L.Width = B.Width

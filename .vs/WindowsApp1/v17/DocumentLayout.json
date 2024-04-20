@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "D:\\Dummy\\Salon_Git\\WindowsApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\active.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\active.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\active.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\active.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\chairs_working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\chairs_working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\inactive.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\inactive.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\chairs_working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\chairs_working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|d:\\dummy\\salon_git\\windowsapp1\\windowsapp1\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -11,16 +39,20 @@
       "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\inactive.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\inactive.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\front_form.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\front_form.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\product_main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\product_main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\front_form.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\front_form.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\master_form.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -49,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\chair_add.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\chair_add.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\chairs_working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\chairs_working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\product_add.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -86,36 +114,8 @@
       "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\login.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\login.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\inactive.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\inactive.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\inactive.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\inactive.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\active.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\active.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\active.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\active.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\chairs_working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|solutionrelative:windowsapp1\\chairs_working.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1579720-B543-4A58-B319-8E656564142C}|WindowsApp1\\WindowsApp1.vbproj|D:\\Dummy\\Salon_Git\\WindowsApp1\\windowsapp1\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -129,7 +129,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -137,40 +137,95 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Front_Form.vb [Design]",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Front_Form.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Front_Form.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Front_Form.vb [Design]",
-              "RelativeToolTip": "WindowsApp1\\Front_Form.vb [Design]",
+              "DocumentIndex": 4,
+              "Title": "Chairs_working.vb",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chairs_working.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Chairs_working.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chairs_working.vb",
+              "RelativeToolTip": "WindowsApp1\\Chairs_working.vb",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBwAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T05:26:02.948Z"
+              "WhenOpened": "2024-04-20T03:06:38.538Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Product_Main.vb [Design]",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Product_Main.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Product_Main.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Product_Main.vb [Design]",
-              "RelativeToolTip": "WindowsApp1\\Product_Main.vb [Design]",
+              "DocumentIndex": 5,
+              "Title": "Inactive.vb",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Inactive.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Inactive.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Inactive.vb",
+              "RelativeToolTip": "WindowsApp1\\Inactive.vb",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBoAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T02:32:46.977Z"
+              "WhenOpened": "2024-04-20T03:17:08.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Working.vb [Design]",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Working.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Working.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Working.vb [Design]",
+              "RelativeToolTip": "WindowsApp1\\Working.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-20T03:23:44.313Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form2.vb [Design]",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Form2.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Form2.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Form2.vb [Design]",
-              "RelativeToolTip": "WindowsApp1\\Form2.vb [Design]",
+              "Title": "Working.vb",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Working.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Working.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Working.vb",
+              "RelativeToolTip": "WindowsApp1\\Working.vb",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T05:33:39.94Z"
+              "WhenOpened": "2024-04-20T03:24:16.794Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Active.vb [Design]",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Active.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Active.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Active.vb [Design]",
+              "RelativeToolTip": "WindowsApp1\\Active.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-20T03:14:04.99Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Active.vb",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Active.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Active.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Active.vb",
+              "RelativeToolTip": "WindowsApp1\\Active.vb",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwBkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-20T03:14:20.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Chairs_working.vb [Design]",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chairs_working.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Chairs_working.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chairs_working.vb [Design]",
+              "RelativeToolTip": "WindowsApp1\\Chairs_working.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-20T10:21:49.193Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Form1.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Form1.vb",
@@ -182,20 +237,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Form1.vb",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Form1.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Form1.vb",
               "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Form1.vb",
               "RelativeToolTip": "WindowsApp1\\Form1.vb",
-              "ViewState": "AQIAACsBAAAAAAAAAAAowDcBAAAAAAAA",
+              "ViewState": "AQIAADkBAAAAAAAAAAAAAEABAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-04-19T15:36:08.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "Inactive.vb [Design]",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Inactive.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Inactive.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Inactive.vb [Design]",
+              "RelativeToolTip": "WindowsApp1\\Inactive.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-20T03:15:31.335Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form2.vb [Design]",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Form2.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Form2.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Form2.vb [Design]",
+              "RelativeToolTip": "WindowsApp1\\Form2.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-20T05:33:39.94Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product_Main.vb [Design]",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Product_Main.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Product_Main.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Product_Main.vb [Design]",
+              "RelativeToolTip": "WindowsApp1\\Product_Main.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-20T02:32:46.977Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Front_Form.vb [Design]",
+              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Front_Form.vb",
+              "RelativeDocumentMoniker": "WindowsApp1\\Front_Form.vb",
+              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Front_Form.vb [Design]",
+              "RelativeToolTip": "WindowsApp1\\Front_Form.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-20T05:26:02.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Master_Form.vb [Design]",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Master_Form.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Master_Form.vb",
@@ -206,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Master_Add.vb [Design]",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Master_Add.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Master_Add.vb",
@@ -217,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Chair_Main.vb [Design]",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chair_Main.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Chair_Main.vb",
@@ -228,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Front_Form.vb",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Front_Form.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Front_Form.vb",
@@ -240,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "Chair_Main.vb",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chair_Main.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Chair_Main.vb",
@@ -252,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "Chair_Add.vb",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chair_Add.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Chair_Add.vb",
@@ -264,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "Chair_Add.vb [Design]",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chair_Add.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Chair_Add.vb",
@@ -275,18 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Chairs_working.vb [Design]",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chairs_working.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Chairs_working.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chairs_working.vb [Design]",
-              "RelativeToolTip": "WindowsApp1\\Chairs_working.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T10:21:49.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "Product_Add.vb",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Product_Add.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Product_Add.vb",
@@ -298,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "Product_Add.vb [Design]",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Product_Add.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Product_Add.vb",
@@ -309,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "Product_Main.vb",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Product_Main.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Product_Main.vb",
@@ -317,11 +408,12 @@
               "RelativeToolTip": "WindowsApp1\\Product_Main.vb",
               "ViewState": "AQIAACsAAAAAAAAAAAAowEMAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T02:34:43.565Z"
+              "WhenOpened": "2024-04-20T02:34:43.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "Master_Add.vb",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Master_Add.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Master_Add.vb",
@@ -333,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Master_Form.vb",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Master_Form.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Master_Form.vb",
@@ -345,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "WindowsApp1",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\WindowsApp1.vbproj",
               "RelativeDocumentMoniker": "WindowsApp1\\WindowsApp1.vbproj",
@@ -356,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "Login.vb [Design]",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Login.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Login.vb",
@@ -367,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "Login.vb",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Login.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Login.vb",
@@ -379,30 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Working.vb [Design]",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Working.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Working.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Working.vb [Design]",
-              "RelativeToolTip": "WindowsApp1\\Working.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T03:23:44.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Working.vb",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Working.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Working.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Working.vb",
-              "RelativeToolTip": "WindowsApp1\\Working.vb",
-              "ViewState": "AQIAALYAAAAAAAAAAAAmwMkAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T03:24:16.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "Login.Designer.vb",
               "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Login.Designer.vb",
               "RelativeDocumentMoniker": "WindowsApp1\\Login.Designer.vb",
@@ -411,64 +480,6 @@
               "ViewState": "AQIAAHQAAAAAAAAAAAAwwHgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-04-20T03:18:21.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Inactive.vb",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Inactive.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Inactive.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Inactive.vb",
-              "RelativeToolTip": "WindowsApp1\\Inactive.vb",
-              "ViewState": "AQIAAMIAAAAAAAAAAAAIwMwAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T03:17:08.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Inactive.vb [Design]",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Inactive.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Inactive.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Inactive.vb [Design]",
-              "RelativeToolTip": "WindowsApp1\\Inactive.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T03:15:31.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Active.vb",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Active.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Active.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Active.vb",
-              "RelativeToolTip": "WindowsApp1\\Active.vb",
-              "ViewState": "AQIAAJ4AAAAAAAAAAAAIwKwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T03:14:20.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Active.vb [Design]",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Active.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Active.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Active.vb [Design]",
-              "RelativeToolTip": "WindowsApp1\\Active.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T03:14:04.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Chairs_working.vb",
-              "DocumentMoniker": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chairs_working.vb",
-              "RelativeDocumentMoniker": "WindowsApp1\\Chairs_working.vb",
-              "ToolTip": "D:\\Dummy\\Salon_Git\\WindowsApp1\\WindowsApp1\\Chairs_working.vb",
-              "RelativeToolTip": "WindowsApp1\\Chairs_working.vb",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAmwJQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-20T03:06:38.538Z"
             },
             {
               "$type": "Document",

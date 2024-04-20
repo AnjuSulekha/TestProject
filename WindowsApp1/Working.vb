@@ -19,9 +19,9 @@ Public Class Working
             ' Fetch data from the Access database and populate the DataTable
             FetchDataFromDatabase()
 
-            ButtonWidh = 180
-            ButtonHeight = 130
-            ButtonPadding = 10
+            ButtonWidh = 100
+            ButtonHeight = 60
+            ButtonPadding = 15
             FunlistChairs()
             ' DataGridAdd("")
         Catch ex As Exception
@@ -209,5 +209,4 @@ Public Class Working
         Next
         Return False
     End Function
-
 End Class

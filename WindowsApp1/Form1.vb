@@ -314,4 +314,28 @@ Public Class Form1
         End If
 
     End Sub
+
+    Private Sub Btn_All_Click(sender As Object, e As EventArgs) Handles Btn_All.Click
+        Chairs_working.MdiParent = Me
+        Chairs_working.Show()
+        Chairs_working.BringToFront()
+    End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        Working.MdiParent = Me
+        Working.Show()
+        Working.BringToFront()
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        Active.MdiParent = Me
+        Active.Show()
+        Active.BringToFront()
+    End Sub
+
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        Inactive.MdiParent = Me
+        Inactive.Show()
+        Inactive.BringToFront()
+    End Sub
 End Class

@@ -22,26 +22,15 @@ Partial Class Chairs_working
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel__Chair = New System.Windows.Forms.Panel()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Panel__Chair)
-        Me.Panel1.Location = New System.Drawing.Point(5, 6)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(865, 543)
-        Me.Panel1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(19, 47)
+        Me.Label1.Location = New System.Drawing.Point(20, 13)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(25, 18)
         Me.Label1.TabIndex = 1
@@ -49,9 +38,12 @@ Partial Class Chairs_working
         '
         'Panel__Chair
         '
-        Me.Panel__Chair.Location = New System.Drawing.Point(17, 69)
+        Me.Panel__Chair.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel__Chair.Location = New System.Drawing.Point(18, 42)
         Me.Panel__Chair.Name = "Panel__Chair"
-        Me.Panel__Chair.Size = New System.Drawing.Size(837, 420)
+        Me.Panel__Chair.Size = New System.Drawing.Size(739, 330)
         Me.Panel__Chair.TabIndex = 0
         '
         'Chairs_working
@@ -59,18 +51,16 @@ Partial Class Chairs_working
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(873, 561)
-        Me.Controls.Add(Me.Panel1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.ClientSize = New System.Drawing.Size(784, 411)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Panel__Chair)
         Me.Name = "Chairs_working"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Chairs_working"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel__Chair As Panel
     Friend WithEvents Label1 As Label
 End Class
