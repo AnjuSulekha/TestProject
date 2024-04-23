@@ -92,9 +92,6 @@ Public Class Master_Form
         ' Re-fetch the data from the database and update the DataGridView
         DataGridAddView("")
     End Sub
-
-
-
     Private Sub DataGridView2_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellClick
         If e.RowIndex >= 0 Then
             If e.ColumnIndex = DataGridView2.Columns("Edit").Index Then
@@ -123,6 +120,10 @@ Public Class Master_Form
     End Sub
 
     Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+
+    End Sub
+
+    Private Sub DataGridView2_Click(sender As Object, e As EventArgs) Handles DataGridView2.Click
 
     End Sub
 End Class

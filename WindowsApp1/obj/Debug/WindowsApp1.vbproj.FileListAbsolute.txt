@@ -23,3 +23,6 @@ D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Login.resources
 D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Working.resources
 D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Form2.resources
 D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Front_Form.resources
+D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.BtnDataGrid_Frm.resources
+D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.BtnOptions.resources
+D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Close_Workfrm.resources

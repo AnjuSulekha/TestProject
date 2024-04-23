@@ -1,5 +1,6 @@
 ﻿'Imports Microsoft.Office.Interop.Excel
 Imports System.Data.OleDb
+Imports System.Runtime.InteropServices
 
 Public Class Chairs_working
     Dim DT As New DataTable
@@ -9,25 +10,23 @@ Public Class Chairs_working
     Dim ButtonWidh As Integer
     Dim ButtonHeight As Integer
     Dim ButtonPadding As Integer
+
     ' Dim L As New Label
     'Public L As New Label
     'Public B As New Button
-
-    ''new
     Private Sub Main_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             'MakePictureBoxRound(PictureBox1)
-
             ' Clear any existing data from the DataTable
             DT.Clear()
-
             ' Fetch data from the Access database and populate the DataTable
             FetchDataFromDatabase()
-
             ButtonWidh = 100
             ButtonHeight = 60
             ButtonPadding = 15
             FunlistChairs()
+            Chair_ID.Visible = True
+            Chair__ID.Visible = True
             ' DataGridAdd("")
         Catch ex As Exception
             ' Handle any exceptions that may occur during the loading process
@@ -36,14 +35,13 @@ Public Class Chairs_working
             ' Perform any cleanup or finalization tasks if necessary
         End Try
     End Sub
-
     Private Sub FetchDataFromDatabase()
         Try
             con.ConnectionString = ConString
             cmd = con.CreateCommand
             If con.State = ConnectionState.Closed Then con.Open()
 
-            cmd.CommandText = "SELECT ChairName, ChairType, StaffName, Status FROM  Chair"
+            cmd.CommandText = "SELECT ID,ChairName, ChairType, StaffName, Status FROM  Chair"
 
 
             Using reader As OleDbDataReader = cmd.ExecuteReader()
@@ -72,7 +70,8 @@ Public Class Chairs_working
             con.Close()
         End Try
     End Sub
-    Private Sub FunlistChairs()
+
+    Public Sub FunlistChairs()
         Dim Ls As New List(Of Label)
         For i As Integer = 0 To DT.Rows.Count - 1
             Dim B As New Button
@@ -85,8 +84,8 @@ Public Class Chairs_working
             B.Width = ButtonWidh
             B.Left = (i Mod 4) * (ButtonWidh + ButtonPadding)
             B.Top = (i \ 4) * (ButtonHeight + ButtonPadding)
-            B.Text = DT.Rows(i).Item("ChairName").ToString '& Environment.NewLine & Environment.NewLine & "StaffName: " & DT.Rows(i).Item("ChairType").ToString
-
+            B.Text = DT.Rows(i).Item("ChairName").ToString &
+            Environment.NewLine & Environment.NewLine & "ID: " & DT.Rows(i).Item("ID").ToString
             ' B.Text = DT.Rows(i).Item("Status").ToString
             L.Width = B.Width
             L.Height = 15
@@ -110,13 +109,6 @@ Public Class Chairs_working
             L1.BackColor = Color.Red
             L1.ForeColor = Color.White
             L1.BringToFront()
-            'Dim chairImage As Image = My.Resources.NewChair ' Replace "NewChair" with the name of your image resource
-            'B.Image = chairImage
-            'B.ImageAlign = ContentAlignment.MiddleCenter ' Set image alignment to center
-            'B.TextImageRelation = TextImageRelation.ImageAboveText ' Display image above the text
-            'B.BackColor = Color.Transparent ' Set the background color of the button as transparent
-            'B.FlatStyle = FlatStyle.Flat ' Set flat style to prevent any default button borders
-            'B.FlatAppearance.BorderSize = 0 ' Set the border size to 0 to remove any border
             If DT.Rows(i).Item("Status") = 1 Then
                 B.BackColor = Color.Honeydew
                 L.Text = "Active"
@@ -127,8 +119,7 @@ Public Class Chairs_working
                 L.Text = "InActive"
                 B.BackColor = Color.Gray
             End If
-
-
+            B.Tag = DT.Rows(i).Item("ID").ToString
             ' Set tag property of the button to hold the index of the current row
             B.Tag = i
             ' Add label to the list
@@ -146,38 +137,68 @@ Public Class Chairs_working
             path.AddArc(rect.Left, rect.Bottom - cornerRadius * 2, cornerRadius * 2, cornerRadius * 2, 90, 90)
             path.CloseFigure()
             B.Region = New Region(path)
-            'AddHandler B.Click, AddressOf Button_Click
+            AddHandler B.Click, AddressOf Button_Click
         Next
     End Sub
 
-    'Private Sub Chairs_working_Click(sender As Object, e As EventArgs) Handles Me.Click
-    '    Dim childform As Chair_Staff
-    '    If childform IsNot Nothing AndAlso Not childform.IsDisposed Then
-    '        ' Close the child form
-    '        childform.Close()
-    '    End If
-    'End Sub
-    'Private Sub Button_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-    '    Dim B As Button = DirectCast(sender, Button)
-    '    Dim index As Integer = CInt(B.Tag)
-    '    ' Retrieve the label associated with the clicked button from the list
-    '    Dim Ls As List(Of Label) = Panel__Chair.Controls.OfType(Of Label)().ToList()
-    '    Dim statusLabel As Label = Ls(index)
-    '    If DT.Rows(index).Item("Status").ToString() = "0" Then
-    '        ' Check if the form is not already open
-    '        If Not IsFormOpen(GetType(Chair_Staff)) Then
-    '            ' Load another form
-    '            Dim chairStaffForm As New Chair_Staff()
-    '            chairStaffForm.TopLevel = False
-    '            Panel__Chair.Controls.Add(chairStaffForm)
-    '            Dim centerX As Integer = Panel__Chair.Width \ 2 - chairStaffForm.Width \ 2
-    '            Dim centerY As Integer = Panel__Chair.Height \ 2 - chairStaffForm.Height \ 2
-    '            chairStaffForm.Location = New Point(centerX, centerY)
-    '            chairStaffForm.BringToFront()
-    '            chairStaffForm.Show()
-    '        End If
-    '    End If
-    'End Sub
+
+    Private Sub Button_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+        Dim workStatus As Integer = checkstatus()
+        Dim B As Button = sender
+        IsCreated(B.Tag) = True
+        Dim buttonText As String = B.Text
+        Dim chairID As String = buttonText.Split(" ")(1).Trim()
+        BtnDataGrid_Frm.Id.Text = chairID
+        Chair__ID.Text = chairID
+        Dim btn As Button = DirectCast(sender, Button)
+        Dim parentCenterX As Integer = btn.Parent.Width \ 2
+        Dim parentCenterY As Integer = btn.Parent.Height \ 2
+        ' Calculate the position to center BtnDataGrid_Frm
+        Dim btnDataGridCenterX As Integer = parentCenterX - (BtnDataGrid_Frm.Width \ 2)
+        Dim btnDataGridCenterY As Integer = parentCenterY - (BtnDataGrid_Frm.Height \ 2)
+        ' Set the location of BtnDataGrid_Frm
+        If workStatus <> 0 Then
+            BtnDataGrid_Frm.Hide()
+            BtnOptions.TopLevel = False
+            btn.Parent.Controls.Add(BtnOptions)
+            BtnOptions.Show()
+            BtnOptions.BringToFront()
+        Else
+            'BtnDataGrid_Frm.Location = New Point(btnDataGridCenterX, btnDataGridCenterY)
+            'BtnDataGrid_Frm.Location = New Point(btn.Left, btn.Top + btn.Height)
+            BtnOptions.Hide()
+            BtnDataGrid_Frm.TopLevel = False
+            btn.Parent.Controls.Add(BtnDataGrid_Frm)
+            BtnDataGrid_Frm.Show()
+            BtnDataGrid_Frm.BringToFront()
+        End If
+    End Sub
+
+    Private Function checkstatus() As Integer
+        Dim query As String = "SELECT Status FROM Chair WHERE ID = @ChairID"
+        Dim workStatus As Integer = 0
+        Try
+            Using connection As New OleDbConnection(ConString)
+                Using command As New OleDbCommand(query, connection)
+                    ' Add parameter for Chair_ID
+                    command.Parameters.AddWithValue("@ChairID", Chair__ID.Text)
+
+                    connection.Open()
+
+                    Dim result As Object = command.ExecuteScalar()
+
+                    If result IsNot Nothing AndAlso result IsNot DBNull.Value Then
+                        ' Convert the result to integer and assign it to workStatus
+                        workStatus = Convert.ToInt32(result)
+                    End If
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
+
+        Return workStatus
+    End Function
     Private Function IsFormOpen(formType As Type) As Boolean
         For Each form As Form In Application.OpenForms
             If form.GetType() = formType Then
@@ -186,5 +207,17 @@ Public Class Chairs_working
         Next
         Return False
     End Function
-
+    Private Sub Chairs_working_Click(sender As Object, e As EventArgs) Handles Me.Click
+        CloseBtnDataGridForm()
+    End Sub
+    Private Sub Chairs_working_MouseClick(sender As Object, e As MouseEventArgs) Handles Me.MouseClick
+        CloseBtnDataGridForm()
+    End Sub
+    Private Sub CloseBtnDataGridForm()
+        ' Check if BtnDataGrid_Frm is open
+        If BtnDataGrid_Frm IsNot Nothing AndAlso Not BtnDataGrid_Frm.IsDisposed Then
+            ' Close BtnDataGrid_Frm
+            BtnDataGrid_Frm.Close()
+        End If
+    End Sub
 End Class

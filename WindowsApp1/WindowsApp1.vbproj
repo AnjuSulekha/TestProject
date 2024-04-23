@@ -83,6 +83,18 @@
     <Compile Include="Active.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BtnDataGrid_Frm.Designer.vb">
+      <DependentUpon>BtnDataGrid_Frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BtnDataGrid_Frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BtnOptions.Designer.vb">
+      <DependentUpon>BtnOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BtnOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Chairs_working.Designer.vb">
       <DependentUpon>Chairs_working.vb</DependentUpon>
     </Compile>
@@ -99,6 +111,12 @@
       <DependentUpon>Chair_Main.vb</DependentUpon>
     </Compile>
     <Compile Include="Chair_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Close_Workfrm.Designer.vb">
+      <DependentUpon>Close_Workfrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Close_Workfrm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -184,6 +202,12 @@
     <EmbeddedResource Include="Active.resx">
       <DependentUpon>Active.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BtnDataGrid_Frm.resx">
+      <DependentUpon>BtnDataGrid_Frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BtnOptions.resx">
+      <DependentUpon>BtnOptions.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Chairs_working.resx">
       <DependentUpon>Chairs_working.vb</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Chair_Main.resx">
       <DependentUpon>Chair_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Close_Workfrm.resx">
+      <DependentUpon>Close_Workfrm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
