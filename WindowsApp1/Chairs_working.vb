@@ -1,5 +1,6 @@
 ﻿'Imports Microsoft.Office.Interop.Excel
 Imports System.Data.OleDb
+Imports System.Diagnostics.Eventing
 Imports System.Runtime.InteropServices
 
 Public Class Chairs_working
@@ -10,7 +11,7 @@ Public Class Chairs_working
     Dim ButtonWidh As Integer
     Dim ButtonHeight As Integer
     Dim ButtonPadding As Integer
-
+    Dim dr As OleDbDataReader
     ' Dim L As New Label
     'Public L As New Label
     'Public B As New Button
@@ -35,7 +36,7 @@ Public Class Chairs_working
             ' Perform any cleanup or finalization tasks if necessary
         End Try
     End Sub
-    Private Sub FetchDataFromDatabase()
+    Public Sub FetchDataFromDatabase()
         Try
             con.ConnectionString = ConString
             cmd = con.CreateCommand
@@ -141,15 +142,19 @@ Public Class Chairs_working
         Next
     End Sub
 
-
+    Dim workStatus As Integer
     Private Sub Button_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-        Dim workStatus As Integer = checkstatus()
+
         Dim B As Button = sender
         IsCreated(B.Tag) = True
         Dim buttonText As String = B.Text
         Dim chairID As String = buttonText.Split(" ")(1).Trim()
         BtnDataGrid_Frm.Id.Text = chairID
+        BtnOptions.Chair_Opt.Text = chairID
         Chair__ID.Text = chairID
+
+        Dim chairStatus As String = FetchChairStatus(chairID)
+        Status.Text = chairStatus
         Dim btn As Button = DirectCast(sender, Button)
         Dim parentCenterX As Integer = btn.Parent.Width \ 2
         Dim parentCenterY As Integer = btn.Parent.Height \ 2
@@ -157,48 +162,65 @@ Public Class Chairs_working
         Dim btnDataGridCenterX As Integer = parentCenterX - (BtnDataGrid_Frm.Width \ 2)
         Dim btnDataGridCenterY As Integer = parentCenterY - (BtnDataGrid_Frm.Height \ 2)
         ' Set the location of BtnDataGrid_Frm
-        If workStatus <> 0 Then
-            BtnDataGrid_Frm.Hide()
-            BtnOptions.TopLevel = False
-            btn.Parent.Controls.Add(BtnOptions)
-            BtnOptions.Show()
-            BtnOptions.BringToFront()
-        Else
-            'BtnDataGrid_Frm.Location = New Point(btnDataGridCenterX, btnDataGridCenterY)
-            'BtnDataGrid_Frm.Location = New Point(btn.Left, btn.Top + btn.Height)
+        If chairStatus = 0 Then
             BtnOptions.Hide()
             BtnDataGrid_Frm.TopLevel = False
             btn.Parent.Controls.Add(BtnDataGrid_Frm)
             BtnDataGrid_Frm.Show()
             BtnDataGrid_Frm.BringToFront()
-        End If
+        ElseIf chairStatus <> 0 Then
+            'If chairStatus = 1 Then
+            '    B.BackColor = Color.Honeydew
+            'ElseIf chairStatus = 2 Then
+            '    B.BackColor = Color.Green
+            'End If
+
+            BtnDataGrid_Frm.Hide()
+                BtnOptions.TopLevel = False
+                btn.Parent.Controls.Add(BtnOptions)
+                BtnOptions.Show()
+                BtnOptions.BringToFront()
+            End If
     End Sub
-
-    Private Function checkstatus() As Integer
-        Dim query As String = "SELECT Status FROM Chair WHERE ID = @ChairID"
-        Dim workStatus As Integer = 0
+    Private Function FetchChairStatus(ByVal chairID As String) As String
         Try
-            Using connection As New OleDbConnection(ConString)
-                Using command As New OleDbCommand(query, connection)
-                    ' Add parameter for Chair_ID
-                    command.Parameters.AddWithValue("@ChairID", Chair__ID.Text)
 
-                    connection.Open()
 
-                    Dim result As Object = command.ExecuteScalar()
+            con.ConnectionString = ConString
+            cmd = con.CreateCommand
+            If con.State = ConnectionState.Closed Then con.Open()
 
-                    If result IsNot Nothing AndAlso result IsNot DBNull.Value Then
-                        ' Convert the result to integer and assign it to workStatus
-                        workStatus = Convert.ToInt32(result)
-                    End If
-                End Using
-            End Using
+            cmd.CommandText = "SELECT Status FROM Chair WHERE ID =" & Chair__ID.Text & " "
+
+            dr = cmd.ExecuteReader()
+            Dim status As String = ""
+            If dr.Read() Then
+                status = dr("Status").ToString()
+                'status = .ToString()
+            End If
+            dr.Close()
+            'Dim connectionString As String = "Your_Connection_String_Here"
+            'Dim query As String = "SELECT Status FROM Chairs WHERE Chair_ID = @ChairID"
+            'Dim status As String = ""
+
+            'Using connection As New OleDbConnection(connectionString)
+            '    Using command As New OleDbCommand(query, connection)
+            '        command.Parameters.AddWithValue("@ChairID", chairID)
+            '        connection.Open()
+            '        Dim reader As OleDbDataReader = command.ExecuteReader()
+            '        If reader.Read() Then
+            '            status = reader("Status").ToString()
+            '        End If
+            '        reader.Close()
+            '    End Using
+            Return status
         Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            con.Close()
         End Try
 
-        Return workStatus
     End Function
+
     Private Function IsFormOpen(formType As Type) As Boolean
         For Each form As Form In Application.OpenForms
             If form.GetType() = formType Then
@@ -219,5 +241,9 @@ Public Class Chairs_working
             ' Close BtnDataGrid_Frm
             BtnDataGrid_Frm.Close()
         End If
+    End Sub
+
+    Private Sub Panel__Chair_Paint(sender As Object, e As PaintEventArgs) Handles Panel__Chair.Paint
+
     End Sub
 End Class

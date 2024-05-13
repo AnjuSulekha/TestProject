@@ -75,6 +75,11 @@ Module Module1
     '    End With
 
     'End Sub
+    Public Sub TabMovement(ByVal keycode As Double)
+        If keycode = 13 Then
+            SendKeys.Send("{tab}")
+        End If
+    End Sub
     Public Sub FunListviewExportToExcelCSV(ByVal LV As ListView, ByVal Takecaption As String)
         Try
             Dim FILE_NAME As String = Application.StartupPath & "\Report.CSV" '"D:\Print.txt"

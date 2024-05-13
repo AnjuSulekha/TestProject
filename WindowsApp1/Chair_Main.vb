@@ -7,12 +7,12 @@ Public Class Chair_Main
     Dim dr As OleDbDataReader
     Dim DT As New DataTable
     Private Sub Chair_Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        con.ConnectionString = ConString
+        cmd = con.CreateCommand
         DataGridAdd("")
     End Sub
     Private Sub DataGridAdd(SearchString As String)
         Try
-            con.ConnectionString = ConString
-            cmd = con.CreateCommand
             If con.State = ConnectionState.Closed Then con.Open()
             cmd.CommandText = "SELECT ID,ChairName,ChairType,StaffName FROM Chair"
             If Trim(SearchString) <> "" Then
@@ -79,7 +79,7 @@ Public Class Chair_Main
                 Dim Chairid As String = DataGridView1.Rows(e.RowIndex).Cells("ID").Value.ToString() ' Assuming "StaffIDColumn" is the name of the column containing the staff ID
                 '        ' .StaffID = staffid
                 Chair_Add.lbl_ChairID.Text = Chairid
-                Chair_Add.MdiParent = Form1
+                Chair_Add.MdiParent = Home_frm
                 Chair_Add.Show()
                 Chair_Add.BringToFront()
                 Chair_Add.lbl_Update.Visible = True
@@ -94,19 +94,6 @@ Public Class Chair_Main
             End If
         End If
     End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Chair_Add.MdiParent = Form1
-        Chair_Add.Show()
-        Chair_Add.BringToFront()
-        Chair_Add.lbl_Update.Visible = False
-        Chair_Add.lbl_ChairID.Visible = False
-        Chair_Add.Button7.Visible = True
-        Chair_Add.Label11.Visible = True
-        Chair_Add.Button12.Visible = False
-        Chair_Add.Exit_btn.Location = New Point(294, 270)
-
-    End Sub
     Public Sub RefreshData()
         ' Clear the DataGridView
         DataGridView1.DataSource = Nothing
@@ -117,6 +104,84 @@ Public Class Chair_Main
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
+    End Sub
 
+    Private Sub Btn_Reg_Click(sender As Object, e As EventArgs) Handles Btn_Reg.Click
+        Try
+            If String.IsNullOrWhiteSpace(Txt_ChairName.Text) Then
+                MsgBox("Please enter Chair Name.")
+                Txt_ChairName.Focus()
+                Return ' Exit the event handler if Chair Name is empty
+            End If
+            If Trim(Btn_Reg.Text) = "Save" Then
+
+                If con.State = ConnectionState.Closed Then con.Open()
+                cmd.CommandText = "Select ChairName,ChairType Chair where ChairName='" & UCase(Trim(Me.Txt_ChairName.Text)) & "'"
+                dr = cmd.ExecuteReader
+                dr.Read()
+                If dr.HasRows = True Then
+                    dr.Close()
+                    MsgBox("Chair Already exists")
+                    Me.Txt_ChairName.Focus()
+                Else
+                    dr.Close()
+                    cmd.CommandText = "insert into Chair (ChairName,ChairType,Status) values ('" & Txt_ChairName.Text & "','" & Txt_ChairType.Text & "',0)"
+                    cmd.ExecuteNonQuery()
+                    ChairClear()
+                    con.Close()
+                    DataGridAdd("")
+                End If
+            ElseIf Trim(Btn_Reg.Text) = "Update" Then
+                If con.State = ConnectionState.Closed Then con.Open()
+                cmd.CommandText = "Select ChairName,ChairType Chair where ID=" & Val(Me.lbl_ID.Text) & ""
+                dr = cmd.ExecuteReader
+                dr.Read()
+                If dr.HasRows = True Then
+                    dr.Close()
+                    cmd.CommandText = "Update Chair Set ChairName='" & Txt_ChairName.Text & "',ChairType='" & Txt_ChairType.Text & "' where ID=" & Val(Me.lbl_ID.Text) & ""
+                    cmd.ExecuteNonQuery()
+                    ChairClear()
+                    con.Close()
+                    DataGridAdd("")
+                Else
+                    dr.Close()
+                    MsgBox("Chair Not Found")
+                End If
+                dr.Close()
+            End If
+        Catch ex As Exception
+        Finally
+            If con.State = ConnectionState.Open Then
+                con.Close()
+            End If
+        End Try
+    End Sub
+    Private Sub ChairClear()
+        Me.Txt_ChairName.Text = ""
+        Me.Txt_ChairType.Text = ""
+        Btn_Reg.Text = "Save"
+    End Sub
+
+    Private Sub btnNew_Click(sender As Object, e As EventArgs) Handles btnNew.Click
+        ChairClear()
+        DataGridAdd("")
+    End Sub
+
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
+        With DataGridView1
+            If Trim(.Rows(e.RowIndex).Cells(0).Value) <> "" Then
+                Me.lbl_ID.Text = Val(.Rows(e.RowIndex).Cells("ID").Value)
+                If con.State = ConnectionState.Closed Then con.Open()
+                cmd.CommandText = "Select ChairName,ChairType from Chair where ID=" & Val(Me.lbl_ID.Text) & ""
+                dr = cmd.ExecuteReader
+                dr.Read()
+                If dr.HasRows = True Then
+                    Me.Txt_ChairName.Text = dr("ChairName").ToString
+                    Me.Txt_ChairType.Text = dr("ChairType").ToString
+                    Btn_Reg.Text = "Update"
+                End If
+                dr.Close()
+            End If
+        End With
     End Sub
 End Class

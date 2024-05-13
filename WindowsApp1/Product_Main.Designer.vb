@@ -79,7 +79,7 @@ Partial Class Product_Main
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView3.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView3.EnableHeadersVisualStyles = False
-        Me.DataGridView3.Location = New System.Drawing.Point(112, 31)
+        Me.DataGridView3.Location = New System.Drawing.Point(12, 31)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -94,7 +94,7 @@ Partial Class Product_Main
         Me.DataGridView3.RowTemplate.Height = 50
         Me.DataGridView3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.DataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView3.Size = New System.Drawing.Size(570, 256)
+        Me.DataGridView3.Size = New System.Drawing.Size(760, 256)
         Me.DataGridView3.TabIndex = 5
         '
         'Button6

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Home_frm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -55,6 +55,11 @@ Partial Class Form1
         Me.MenuTransition = New System.Windows.Forms.Timer(Me.components)
         Me.MoreTransition = New System.Windows.Forms.Timer(Me.components)
         Me.OtherTransition = New System.Windows.Forms.Timer(Me.components)
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProductToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.Panel8.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,10 +67,12 @@ Partial Class Form1
         Me.Panel_Explore.SuspendLayout()
         Me.More.SuspendLayout()
         Me.Other_Panel.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
         '
+        Me.FlowLayoutPanel1.AutoScroll = True
         Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(71, Byte), Integer))
         Me.FlowLayoutPanel1.Controls.Add(Me.Panel8)
         Me.FlowLayoutPanel1.Controls.Add(Me.Btn_DashBoard)
@@ -74,9 +81,9 @@ Partial Class Form1
         Me.FlowLayoutPanel1.Controls.Add(Me.More)
         Me.FlowLayoutPanel1.Controls.Add(Me.Button5)
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 24)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(208, 529)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(208, 505)
         Me.FlowLayoutPanel1.TabIndex = 0
         '
         'Panel8
@@ -511,13 +518,49 @@ Partial Class Form1
         '
         Me.OtherTransition.Interval = 10
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(950, 24)
+        Me.MenuStrip1.TabIndex = 2
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StaffToolStripMenuItem, Me.ChairToolStripMenuItem, Me.ProductToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'StaffToolStripMenuItem
+        '
+        Me.StaffToolStripMenuItem.Name = "StaffToolStripMenuItem"
+        Me.StaffToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StaffToolStripMenuItem.Text = "Staff"
+        '
+        'ChairToolStripMenuItem
+        '
+        Me.ChairToolStripMenuItem.Name = "ChairToolStripMenuItem"
+        Me.ChairToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ChairToolStripMenuItem.Text = "Chair"
+        '
+        'ProductToolStripMenuItem
+        '
+        Me.ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
+        Me.ProductToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ProductToolStripMenuItem.Text = "Product"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(950, 529)
         Me.Controls.Add(Me.FlowLayoutPanel1)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
@@ -529,7 +572,10 @@ Partial Class Form1
         Me.Panel_Explore.ResumeLayout(False)
         Me.More.ResumeLayout(False)
         Me.Other_Panel.ResumeLayout(False)
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -565,4 +611,9 @@ Partial Class Form1
     Friend WithEvents MenuTransition As Timer
     Friend WithEvents MoreTransition As Timer
     Friend WithEvents OtherTransition As Timer
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StaffToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ChairToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProductToolStripMenuItem As ToolStripMenuItem
 End Class

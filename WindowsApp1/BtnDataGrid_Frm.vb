@@ -1,6 +1,7 @@
 ﻿Imports System.Data.OleDb
 Imports System.IO
 Imports System.Net.Configuration
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class BtnDataGrid_Frm
     Dim con As New OleDbConnection
@@ -77,6 +78,8 @@ Public Class BtnDataGrid_Frm
             If e.ColumnIndex = DataGridView2.Columns("Status").Index Then
                 Dim staffID As String = DataGridView2.Rows(e.RowIndex).Cells("StaffID").Value.ToString()
                 Dim staffname As String = DataGridView2.Rows(e.RowIndex).Cells("StaffName").Value.ToString()
+                Label2.Text = staffID
+
                 UpdateWorkStatus(staffID)
                 '  Dim staffname As String = DataGridView2.Rows(e.RowIndex).Cells("StaffName").Value.ToString()
                 cmd = con.CreateCommand
@@ -89,15 +92,26 @@ Public Class BtnDataGrid_Frm
                 ' Execute the query
                 cmd.ExecuteNonQuery()
                 con.Close()
-                'Chairs_working.UpdateButtonColors()
 
                 Master_Form.RefreshStaffData()
+
                 Me.Close()
+
             End If
 
         End If
 
     End Sub
+    'Public Sub fetchstatus()
+    '    Try
+    '        con.ConnectionString = ConString
+    '        cmd = con.CreateCommand
+    '        If con.State = ConnectionState.Closed Then con.Open()
+    '        cmd.CommandText = "select Status from Chair where ID=" & Id.Text & ""
+    '    Catch ex As Exception
+
+    '    End Try
+    'End Sub
     Public Sub RefreshStaffData()
         ' Clear the DataGridView
         DataGridView2.DataSource = Nothing

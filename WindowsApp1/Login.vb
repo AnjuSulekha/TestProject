@@ -9,7 +9,7 @@ Public Class Login
     Dim dt As New DataTable
     Dim dr As OleDbDataReader
     Dim da As New OleDbDataAdapter
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Home_frm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim gbrush As New LinearGradientBrush(Me.DisplayRectangle, Color.DarkBlue, Color.LightBlue, LinearGradientMode.BackwardDiagonal)
         Me.BackgroundImage = New Bitmap(Me.Width, Me.Height)
@@ -193,7 +193,7 @@ Public Class Login
                         TakeUserName = Txt_UserName.Text
                         ' MsgBox("login successful")
                         Me.Hide()
-                        Form1.Visible = True
+                        Home_frm.Visible = True
                     Else
                         dr.Close()
                         MsgBox("Invalid Password")

@@ -56,7 +56,7 @@ Public Class Product_Main
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Product_Add.MdiParent = Form1
+        Product_Add.MdiParent = Home_frm
         Product_Add.Show()
         Product_Add.BringToFront()
 
@@ -141,12 +141,16 @@ Public Class Product_Main
                 Product_Add.DeleteProduct.Visible = True
                 Product_Add.Button8.Location = New Point(381, 369)
 
-                Product_Add.MdiParent = Form1
+                Product_Add.MdiParent = Home_frm
                 Product_Add.Show()
                 Product_Add.BringToFront()
                 Product_Add.LoadProductData()
                 'Product_Add.Button8.Location = New Point(381, 369)
             End If
         End If
+    End Sub
+
+    Private Sub Product_Panel_Paint(sender As Object, e As PaintEventArgs) Handles Product_Panel.Paint
+
     End Sub
 End Class

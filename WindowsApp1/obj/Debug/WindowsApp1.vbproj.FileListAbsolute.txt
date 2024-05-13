@@ -26,3 +26,59 @@ D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Front_Form.reso
 D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.BtnDataGrid_Frm.resources
 D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.BtnOptions.resources
 D:\Dummy\Salon_Git\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Close_Workfrm.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.pdb
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.xml
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.AssemblyReference.cache
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Active.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.BtnDataGrid_Frm.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.BtnOptions.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Chairs_working.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Chair_Add.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Chair_Main.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Close_Workfrm.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Form2.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Front_Form.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Inactive.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Login.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Master_Form.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Product_Add.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Product_Main.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Working.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.exe
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Home_frm.resources
+D:\Acer -DATA\Project\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.StaffMaster.resources
+D:\SalonAssist-WindowApp\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+D:\SalonAssist-WindowApp\WindowsApp1\bin\Debug\WindowsApp1.exe
+D:\SalonAssist-WindowApp\WindowsApp1\bin\Debug\WindowsApp1.pdb
+D:\SalonAssist-WindowApp\WindowsApp1\bin\Debug\WindowsApp1.xml
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.vbproj.AssemblyReference.cache
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Active.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.BtnDataGrid_Frm.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.BtnOptions.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Chairs_working.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Chair_Add.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Chair_Main.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Close_Workfrm.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Home_frm.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Form2.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Front_Form.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Inactive.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Login.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.StaffMaster.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Master_Form.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Product_Add.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Product_Main.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.Working.resources
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.exe
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.xml
+D:\SalonAssist-WindowApp\WindowsApp1\obj\Debug\WindowsApp1.pdb

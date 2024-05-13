@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 
-Public Class Form1
+Public Class Home_frm
     Dim DT As New DataTable
     Dim con As New OleDbConnection
     Dim cmd As New OleDbCommand
@@ -8,7 +8,7 @@ Public Class Form1
     Dim ButtonWidh As Integer
     Dim ButtonHeight As Integer
     Dim ButtonPadding As Integer
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Home_frm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Front_Form.Width = Me.Width - (FlowLayoutPanel1.Width + 20)
         Front_Form.Height = Me.Height - 50
         Front_Form.MdiParent = Me
@@ -148,7 +148,7 @@ Public Class Form1
     '        'End If
     'endpart:
     '    End Sub
-    '    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+    '    Private Sub Home_frm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
 
     '        ' Calculate the maximum width for each panel
     '        Dim maxPanelWidth As Integer = (Me.ClientSize.Width - 55 * 4) / 4 ' Initial calculation for non-maximized state
@@ -274,19 +274,18 @@ Public Class Form1
             End If
 
         End If
-
     End Sub
 
     Private Sub Btn_Satff_Click(sender As Object, e As EventArgs) Handles Btn_Satff.Click
-        Master_Form.MdiParent = Me
-        Master_Form.Show()
-        Master_Form.BringToFront()
+        StaffMaster.MdiParent = Me
+        StaffMaster.Show()
+        StaffMaster.BringToFront()
     End Sub
 
-    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+    Private Sub Home_frm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         If Front_Form.Visible = True Then
             Front_Form.Width = Me.Width - (FlowLayoutPanel1.Width + 20)
-            Front_Form.Height = Me.Height - 50
+            Front_Form.Height = Me.Height - 70
         End If
     End Sub
 
@@ -337,5 +336,11 @@ Public Class Form1
         Inactive.MdiParent = Me
         Inactive.Show()
         Inactive.BringToFront()
+    End Sub
+
+    Private Sub StaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StaffToolStripMenuItem.Click
+        StaffMaster.MdiParent = Me
+        StaffMaster.Show()
+        StaffMaster.BringToFront()
     End Sub
 End Class

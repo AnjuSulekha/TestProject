@@ -119,11 +119,11 @@
     <Compile Include="Close_Workfrm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Home_frm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Home_frm.Designer.vb">
+      <DependentUpon>Home_frm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2.Designer.vb">
@@ -150,10 +150,10 @@
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master_Add.Designer.vb">
-      <DependentUpon>Master_Add.vb</DependentUpon>
+    <Compile Include="StaffMaster.Designer.vb">
+      <DependentUpon>StaffMaster.vb</DependentUpon>
     </Compile>
-    <Compile Include="Master_Add.vb">
+    <Compile Include="StaffMaster.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Master_Form.Designer.vb">
@@ -220,8 +220,8 @@
     <EmbeddedResource Include="Close_Workfrm.resx">
       <DependentUpon>Close_Workfrm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Home_frm.resx">
+      <DependentUpon>Home_frm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
@@ -235,8 +235,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master_Add.resx">
-      <DependentUpon>Master_Add.vb</DependentUpon>
+    <EmbeddedResource Include="StaffMaster.resx">
+      <DependentUpon>StaffMaster.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master_Form.resx">
       <DependentUpon>Master_Form.vb</DependentUpon>
